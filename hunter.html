@@ -83,13 +83,14 @@
         </div>
     </div>
     <script>
-		var ids = ["img1", "img2", "img3", "img4", "img5", "img6", "img7", "img8", "img9", "img10", "img11", "img12", "img13", "img14", "img15", "img16", "img17", "img18", "img19", "img20", "img21", "img22", "img23", "img24"];
+		var ids = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10", "image11", "image12", "image13", "image14", "image15", "image16", "image17", "image18", "image19", "image20", "image21", "image22", "image23", "image24"];
 		var checkCount = 0;
 		var penalty = 0;
 		var lastCheck = 0;
 		var mouseLocation = 13;
 		var catLocation = 21;
 		var gameOver = false;
+        //var ids=[ ];
 
 		function check(position){
 			var imgId = ids[position];
@@ -98,9 +99,10 @@
 				document.getElementById(imgId).src = "mouse.jpg";
 				gameOver = true;
 				penalty -= 4;
+
 			}
 			else if(position == catLocation){
-				document.getElementById(imgId).src = "tiger.jpg";
+				document.getElementById(imgId).src = "Tiger.jpg";
 				gameOver = true;
 				penalty += 3;
 			}
@@ -117,7 +119,6 @@
 		function help(){
 			var row = lastCheck / 4;
 			var col = lastCheck % 6;
-			var row = ;
 
 			if(lastCheck == catLocation){
 				return "meow";
@@ -131,8 +132,6 @@
 			document.getElementById("penalty").innerHTML = "Penalty is " + penalty + ".";
 			document.getElementById("help").innerHTML = "help report";
 
-
-			if(lastCheck == )
 		}
 	</script>
 </body>
