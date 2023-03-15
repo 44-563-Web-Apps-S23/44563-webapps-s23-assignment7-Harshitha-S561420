@@ -87,19 +87,17 @@
         }
         
     }
-//**********************************
-    //function Promote(){
-        //let len=queueItems.length;
-        
-        //let r1=Math.floor(Math.random()*len);
-        //console.log(r1);
-        //removedItem=queueItems[r1];
-            //console.log(removedItem);
-            //console.log(removedItem.innerHTML);
-            //queueItems[r1].remove();
-            //let container = document.getElementById('target')
-	        //container.insertBefore(removedItem,container.firstChild)
-    //}
-//****************************************************************
+    function Promote(){
+    let len=queueItems.length;
+        let r1=Math.floor(Math.random()*len);
+        console.log(r1);
+        removedItem=queueItems[r1];
+            console.log(removedItem);
+            console.log(removedItem.innerHTML);
+            queueItems[r1].remove();
+            let container = document.getElementById('target')
+	        container.insertBefore(removedItem,container.firstChild)
+    }
+
 </script>
 </html>	

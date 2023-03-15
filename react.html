@@ -34,17 +34,16 @@
     console.log(reactTime);
   }
   let i=0;
-  //**************************************
+
+  let rv=Math.floor((Math.random() * 10) + 2);
   //let rv=Math.floor((Math.random() * 10) + 2);
-  //let rv=Math.floor((Math.random() * 10) + 2);
-  //function startTime(){
-     //rv=Math.floor((Math.random() * 10) + 2);
-    //for( i=0;i<rv;i++){
-        //console.log(rv);
-        //setTimeou(i); 
-    //}
-//********************************************
-    
+  function startTime(){
+     rv=Math.floor((Math.random() * 10) + 2);
+    for( i=0;i<rv;i++){
+       console.log(rv);
+        setTimeou(i); 
+    }
+  
   setTimeout( () => {
         console.log("Entered anononymouse fn");
          if(reactTime==undefined){
@@ -59,8 +58,10 @@
             let temp=endTime-reactTime;
             console.log(temp);
             document.getElementById('target').innerHTML="Time was "+temp;
-         }},8*1000);
-    
+         }
+        },8*1000);
+   
+    } 
     function setTimeou(i)
    {
         setTimeout(()=>{
